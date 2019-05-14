@@ -1,0 +1,14 @@
+<h1>New Post It Note</h1>
+
+<%= form_for @note do |n| %>
+    <%= f.label :to %>
+    <%= f.text_field :to %>
+
+    <%= f.label :from %>
+    <%= f.text_field :from %>
+
+    <%= f.label :subject %>
+    <%= f.text_area :subject %>
+
+    <%= f.submit %>
+<% end %>
